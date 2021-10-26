@@ -9,7 +9,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
 /*********************************************************************
  LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
 *********************************************************************/
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
 
 /*********************************************************************
   YOUR MOBILE/BASE STYLES GO HERE
@@ -24,6 +24,7 @@ body,
 html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    font-family: Helvetica;
 }
 
 /** RESPONSIVE IMAGES */
@@ -57,39 +58,6 @@ figcaption {
     margin: 0 auto;
 }
 
-.sticky .stick{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    max-width: 350px;
-}
-
-.stick .fa-close{
-    display: none;
-    top: 0px;
-    left: 0;
-    transform: translateX(-50%), translateY(-50%);
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border-radius: 50%;
-    padding: 5px 7px;
-    position: absolute;
-    z-index: 3;
-    text-decoration: none;
-}
-
-.sticky .stick .fa-close {
-    display: block;
-}
-
-.video.placeholder{
-    display: none;
-}
-
-.sticky .video.placeholder{
-    display: block;
-}
-
 /** Images are allowed to be a little wider when broken out into their own container */
 .container.image {
     max-width: 1200px;
@@ -120,6 +88,39 @@ figcaption {
     padding-top: 25%;
 }
 
+.stick .fa-close {
+    display: none;
+    top: 0px;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 6px 7px;
+    position: absolute;
+    z-index: 3;
+    text-decoration: none;
+}
+
+.sticky .stick {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 350px;
+}
+
+.sticky .stick .fa-close {
+    display: block;
+}
+
+.video.placeholder {
+    display: none;
+}
+
+.sticky .video.placeholder {
+    display: block;
+}
+
 /** video setup */
 .video {
     position: relative;
@@ -145,7 +146,7 @@ figcaption {
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
-@media(min-width: 681px) {
+@media (min-width: 681px) {
 
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
@@ -157,7 +158,7 @@ figcaption {
         display: none;
     }
 
-    .sticky .stick{
+    .sticky .stick {
         right: 10px;
     }
 }
@@ -165,7 +166,7 @@ figcaption {
 /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-@media(min-width: 769px) {
+@media (min-width: 769px) {
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 769px or larger -- so desktop */
 }
@@ -173,7 +174,7 @@ figcaption {
 /*********************************************************************
   YOUR MEDIUM-DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-@media(min-width: 805px) {
+@media (min-width: 805px) {
 
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 769px or larger -- so desktop */
@@ -185,7 +186,7 @@ figcaption {
 /*********************************************************************
   YOUR LARGE DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-@media(min-width: 1205px) {
+@media (min-width: 1205px) {
 
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 769px or larger -- so desktop */
